@@ -92,17 +92,3 @@ python api.py
 
 ---
 
-## 使用 Python 匯入 SQL（替代 CLI）
-專案已附一個簡單工具 `api/import_sql.py`：
-
-用法（在 `api` 目錄）：
-
-```powershell
-cd api
-# 啟用虛擬環境後
-python import_sql.py test_2.sql
-```
-
-這會根據 `api/config.json` 的設定開連線並逐一執行 SQL 陳述式。
-
----
