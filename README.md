@@ -8,7 +8,7 @@
 
 ---
 
-## 先決條件 ⚙️
+## 先決條件 
 - Node.js（建議 Node 18+）與 npm
 - Python 3.10+
 - MySQL（或 MariaDB）可執行，且有權限建立資料庫
