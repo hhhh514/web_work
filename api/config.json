@@ -1,0 +1,13 @@
+{
+  "db": {
+    "username": "root",
+    "password": "",
+    "host": "localhost",
+    "port": 3306,
+    "database": "test",
+    "charset": "utf8mb4"
+  },
+  "sqlalchemy": {
+    "track_modifications": false
+  }
+}

@@ -1,0 +1,30 @@
+@startuml
+skinparam monochrome true
+title 線上購物系統 - 商品顯示
+
+' 控制佈局為左到右，縮短線條
+left to right direction
+skinparam ranksep 20
+skinparam nodesep 20
+
+actor "顧客\n(柏維)" as 顧客
+actor "賣家\n(加成)" as 賣家
+
+package "商品顯示" {
+[瀏覽商品]
+[提交評論]
+[上架商品]
+[更新庫存]
+}
+
+' 顧客在左邊，賣家在右邊，顯示連線
+顧客 #..# [瀏覽商品]
+顧客 #..# [提交評論]
+[上架商品] #..# 賣家
+[更新庫存] #..# 賣家
+
+' 關係
+[提交評論] .> [瀏覽商品] : <<extend>>
+[上架商品] .> [更新庫存] : <<include>>
+
+@enduml

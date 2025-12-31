@@ -1,0 +1,148 @@
+@startuml
+
+class Product {
+  - product_id : int
+  - product_type : string
+  - name : string
+  - description : string
+  - price : float
+  - stock : int
+  - seller_id : int
+  + getProductDetails(product_id : int) : string
+  + updateProductDetails(newName: string, newDescription: string, newPrice: float) : void
+  + updateStock(newStock: int) : void
+  + addProduct() : void
+}
+class Product_Category {
+  - category_id : int
+  - categoryname : string
+  + addCategory() : void
+}
+
+class Seller {
+  - seller_id : int
+  - name : string
+  - email : string
+  - rating : float
+  + getSellerInfo(seller_id : int) : string
+  + updateRating(rating: float) : void
+  + addSeller() : void
+}
+
+class Customer {
+  - customer_id : int
+  - name : string
+  - email : string
+  - phone : string
+  - address : string
+  + getCustomerInfo(customer_id : int) : string
+  + updateCustomerInfo(newAddress: string) : void
+  + addCustomer() : void
+}
+
+class Order {
+  - order_id : int
+  - customer_id : int
+  - seller_id : int
+  - order_date : datetime
+  - total_amount : float
+  - status : string
+  + calculateTotal(order_id : int) : float
+  + updateStatus(newStatus: string) : void
+  + addOrder() : void
+}
+
+class Order_Item {
+  - order_item_id : int
+  - order_id : int
+  - product_id : int
+  - quantity : int
+  - subtotal : float
+  + calculateSubtotal(product_id : int, quantity : int) : float
+}
+
+class Cart {
+  - cart_id       : int
+  - customer_id   : int
+  - created_date  : datetime
+  - last_updated  : datetime
+  + addItem(product_id: int, quantity: int, category_id: int) : void
+  + removeItem(product_id: int, category_id: int) : void
+}
+
+class Cart_Category {
+  - category_id   : int
+  - cart_id       : int
+  - name          : string
+  - description   : string
+  - budget        : float
+  + deleteCategory() : void
+  + updateBudget(newBudget: float) : void
+  + renameCategory(newName : string) : void
+}
+
+class Cart_Item {
+  - cart_item_id  : int
+  - cart_id       : int
+  - product_id    : int
+  - category_id   : int
+  - quantity      : int
+  + updateQuantity(newQuantity: int) : void
+}
+
+class WishList {
+  - wishlist_id : int
+  - customer_id : int
+  - created_date : datetime
+  + addProduct(product_id: int) : void
+  + removeProduct(product_id: int) : void
+}
+
+
+class WishList_Item {
+  - wishlist_item_id : int
+  - wishlist_id : int
+  - product_id : int
+  - add_date : datetime
+}
+
+class Sales_Summary {
+  - summary_id : int
+  - seller_id : int
+  - product_id : int
+  - total_quantity_sold : int
+  - total_revenue : float
+  - last_updated : datetime
+  + generateSummary() : string
+}
+
+class Review {
+  - review_id : int
+  - customer_id : int
+  - product_id : int
+  - rating : float
+  - comment : string
+  - review_date : datetime
+  + submitReview() : void
+  + deleteReview(customer_id : int,review_id : int) : void
+}
+
+' Relationships
+Product "1" *-- "1" Seller
+Product "1" *-- "0..*" Product_Category
+Customer "1" *-- "0..*" Order
+Order "1" *-- "0..*" Order_Item
+Order_Item "1" *-- "1" Product
+Cart "1" *-- "1" Customer
+Cart_Item "0..*" *-- "1" Cart
+Cart_Item "1" *-- "1" Product
+Cart "1" *-- "0..1" Cart_Category
+Customer "1" *-- "0..1" WishList
+WishList_Item "0..*" *-- "1" WishList
+WishList_Item "1" *-- "1" Product
+Sales_Summary "0..*" *-- "1" Seller
+Sales_Summary "0..*" *-- "1" Product
+Review "0..*" *-- "1" Customer
+Review "0..*" *-- "1" Product
+
+@enduml

@@ -1,0 +1,94 @@
+digraph UML {
+	rankdir=LR size="8,5"
+	Product [label="{Product|
++ name: str\l
++ price: float\l
++ description: str\l
++ stock: int\l
++ seller: Seller\l
++ categories: List[Product_Category]\l
+|
++ add_product()\l
++ update_info()\l
++ update_stock()\l
+}" fontname=Arial fontsize=10 shape=record]
+	Product_Category [label="{Product_Category|
++ name: str\l
+}" fontname=Arial fontsize=10 shape=record]
+	Seller [label="{Seller|
++ name: str\l
++ rating: float\l
+|
++ add_seller()\l
++ update_rating()\l
+}" fontname=Arial fontsize=10 shape=record]
+	Customer [label="{Customer|
++ name: str\l
++ contact_info: str\l
+|
++ add_customer()\l
++ update_contact()\l
+}" fontname=Arial fontsize=10 shape=record]
+	Order [label="{Order|
++ customer: Customer\l
++ seller: Seller\l
++ items: List[Order_Item]\l
+|
++ calculate_total()\l
++ update_status()\l
+}" fontname=Arial fontsize=10 shape=record]
+	Order_Item [label="{Order_Item|
++ product: Product\l
++ quantity: int\l
+}" fontname=Arial fontsize=10 shape=record]
+	Cart [label="{Cart|
++ customer: Customer\l
++ items: List[Cart_Item]\l
+|
++ add_item()\l
++ remove_item()\l
++ update_quantity()\l
+}" fontname=Arial fontsize=10 shape=record]
+	Cart_Item [label="{Cart_Item|
++ product: Product\l
++ quantity: int\l
+}" fontname=Arial fontsize=10 shape=record]
+	Cart_Category [label="{Cart_Category|
++ name: str\l
+}" fontname=Arial fontsize=10 shape=record]
+	WishList [label="{WishList|
++ customer: Customer\l
++ items: List[WishList_Item]\l
+}" fontname=Arial fontsize=10 shape=record]
+	WishList_Item [label="{WishList_Item|
++ product: Product\l
+}" fontname=Arial fontsize=10 shape=record]
+	Sales_Summary [label="{Sales_Summary|
++ seller: Seller\l
++ product: Product\l
++ total_sales: int\l
++ revenue: float\l
+}" fontname=Arial fontsize=10 shape=record]
+	Review [label="{Review|
++ customer: Customer\l
++ product: Product\l
++ rating: int\l
++ comment: str\l
+}" fontname=Arial fontsize=10 shape=record]
+	Product -> Seller [label="belongs to" arrowhead=normal]
+	Product -> Product_Category [label="categorized by" arrowhead=normal]
+	Order -> Customer [label="placed by" arrowhead=normal]
+	Order -> Seller [label="includes products from" arrowhead=normal]
+	Order -> Order_Item [label=contains arrowhead=normal]
+	Order_Item -> Product [label=references arrowhead=normal]
+	Cart -> Customer [label="belongs to" arrowhead=normal]
+	Cart -> Cart_Item [label=has arrowhead=normal]
+	Cart_Item -> Product [label=references arrowhead=normal]
+	WishList -> Customer [label="owned by" arrowhead=normal]
+	WishList -> WishList_Item [label=contains arrowhead=normal]
+	WishList_Item -> Product [label=references arrowhead=normal]
+	Sales_Summary -> Seller [arrowhead=normal]
+	Sales_Summary -> Product [arrowhead=normal]
+	Review -> Customer [arrowhead=normal]
+	Review -> Product [arrowhead=normal]
+}

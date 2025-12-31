@@ -1,0 +1,39 @@
+{
+    "cart": [
+        {
+            "cart_id": 10,
+            "name": "一般",
+            "budget": null,
+            "items": [
+                {
+                    "cart_item_id": 201,
+                    "product_id": 700,
+                    "product_name": "Logitech 鍵盤",
+                    "quantity": 1,
+                    "price": 890
+                }
+            ]
+        },
+        {
+            "cart_id": 11,
+            "name": "電子產品",
+            "budget": 5000,
+            "items": [
+                {
+                    "cart_item_id": 202,
+                    "product_id": 800,
+                    "product_name": "Sony WH-1000XM4",
+                    "quantity": 1,
+                    "price": 3999
+                },
+                {
+                    "cart_item_id": 203,
+                    "product_id": 801,
+                    "product_name": "Apple MacBook Pro",
+                    "quantity": 1,
+                    "price": 24900
+                }
+            ]
+        }
+    ]
+}

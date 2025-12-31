@@ -1,0 +1,25 @@
+@startgantt
+Project starts 2025-03-01
+
+[討論主體、分工] lasts 1 day
+
+[資料庫架構討論，完成 ERD 圖] starts 2025-03-05 lasts 1 day
+
+[功能探討（前端）] starts 2025-03-12 lasts 1 day
+
+[功能探討（後端）] starts 2025-03-19 lasts 1 day
+
+[商品頁面展示 & 顧客頁面（前端）進行] starts 2025-03-26 lasts 15 days
+
+[賣家功能（前端）] starts 2025-04-09 lasts 14 days
+
+[討論期中「需求規格書」必寫項目] starts 2025-04-23 lasts 1 day
+
+[賣家功能(前端完善) api 賣家功能] starts 2025-05-07 lasts 7 days
+
+[買家功能 購物車 (前端) api 購物車功能] starts 2025-05-21 lasts 7 days
+
+[留言功能 (前端) api 留言功能] starts 2025-06-04 lasts 4 days
+
+[整合] starts 2025-06-08 lasts 1 day
+@endgantt

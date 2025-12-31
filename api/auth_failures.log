@@ -1,0 +1,20 @@
+2025-12-22 22:17:10,988 - WARNING - IP 114.35.243.13 嘗試訪問 /products 時缺少或無效 token
+2025-12-22 22:18:23,208 - WARNING - IP 114.35.243.13 連續 3 次登入失敗，被鎖定 10 分鐘
+2025-12-22 22:18:25,049 - WARNING - IP 114.35.243.13 被鎖定 10 分鐘，剩餘 598 秒
+2025-12-23 10:16:05,834 - WARNING - IP 114.35.243.13 嘗試使用無效或過期 token: 77Ylg8Jiqi1NeEX9NyCX8qxQZ-odVRnqn422WXMumcg 訪問 /products
+2025-12-23 11:28:44,378 - WARNING - IP 78.83.63.114 嘗試訪問 / 時缺少或無效 token
+2025-12-23 12:25:00,868 - WARNING - IP 205.210.31.181 嘗試訪問 / 時缺少或無效 token
+2025-12-23 13:18:32,158 - WARNING - IP 59.120.249.100 嘗試使用無效或過期 token: hOcjO1wdDvX2Kz8imFwgf0c3EBBxFSgTvsey-laQdvc 訪問 /products
+2025-12-23 13:18:34,361 - WARNING - IP 59.120.249.100 嘗試使用無效或過期 token: hOcjO1wdDvX2Kz8imFwgf0c3EBBxFSgTvsey-laQdvc 訪問 /products
+2025-12-23 13:31:44,581 - WARNING - IP 205.210.31.134 嘗試訪問 / 時缺少或無效 token
+2025-12-29 20:27:40,302 - WARNING - IP 114.35.243.13 嘗試使用無效或過期 token: _syw9Rrb4d-XXXaVzF8kgI2b_kscEweh12fGgqWAC1w 訪問 /products
+2025-12-30 09:57:08,180 - WARNING - IP 114.35.243.13 嘗試訪問 /products 時缺少或無效 token
+2025-12-30 12:32:02,624 - WARNING - IP 209.38.93.252 嘗試訪問 / 時缺少或無效 token
+2025-12-30 12:32:03,023 - WARNING - IP 209.38.93.252 嘗試訪問 / 時缺少或無效 token
+2025-12-30 13:43:38,314 - WARNING - IP 59.120.249.100 嘗試訪問 /products 時缺少或無效 token
+2025-12-30 13:50:31,750 - WARNING - IP 170.64.212.38 嘗試訪問 / 時缺少或無效 token
+2025-12-30 13:50:32,123 - WARNING - IP 170.64.212.38 嘗試訪問 / 時缺少或無效 token
+2025-12-30 14:56:12,579 - WARNING - IP 60.248.123.154 嘗試訪問 /products 時缺少或無效 token
+2025-12-30 14:59:11,664 - WARNING - IP 60.248.123.154 連續 3 次登入失敗，被鎖定 10 分鐘
+2025-12-30 14:59:13,477 - WARNING - IP 60.248.123.154 被鎖定 10 分鐘，剩餘 598 秒
+2025-12-30 15:00:05,343 - WARNING - IP 60.248.123.154 被鎖定 10 分鐘，剩餘 546 秒
