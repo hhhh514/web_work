@@ -8,7 +8,7 @@
 
 ---
 
-## 先決條件 
+## 先決條件 ⚙️
 - Node.js（建議 Node 18+）與 npm
 - Python 3.10+
 - MySQL（或 MariaDB）可執行，且有權限建立資料庫
@@ -16,7 +16,7 @@
 
 ---
 
-## 1) 前端：安裝與啟動（Vue/Vuetify）
+## 1) 前端：安裝與啟動（Vue/Vuetify） 
 1. 在專案根目錄（含 `package.json` 的資料夾）執行：
 
 ```powershell
@@ -28,6 +28,8 @@ npm install
 ```powershell
 npm run dev -- --host
 ```
+
+- 開發伺服器預設會在 `http://localhost:5173` 執行（Vite 預設 5173）。
 
 - 若要 build 成 production bundle：
 
@@ -91,4 +93,3 @@ python api.py
 - 若要更改資料庫帳號、密碼或資料庫名稱，編輯 `api/config.json`。
 
 ---
-
